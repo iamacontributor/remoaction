@@ -14,6 +14,7 @@ export function getUsers(request: Request, response: Response) {
   //         throw err
   //     }
   // })
+  console.log('hi');
   if (!result.isEmpty()) return response.status(400).send({ errors: result.array() });
   response.send([]);
 }
